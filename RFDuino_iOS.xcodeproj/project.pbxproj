@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5DEFC8621AA46C2000E3516D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFC8611AA46C2000E3516D /* AppDelegate.swift */; };
+		5DEFC8641AA46C2000E3516D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFC8631AA46C2000E3516D /* ViewController.swift */; };
+		5DEFC8671AA46C2000E3516D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DEFC8651AA46C2000E3516D /* Main.storyboard */; };
+		5DEFC8691AA46C2000E3516D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DEFC8681AA46C2000E3516D /* Images.xcassets */; };
+		5DEFC86C1AA46C2000E3516D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DEFC86A1AA46C2000E3516D /* LaunchScreen.xib */; };
+		5DEFC8781AA46C2000E3516D /* RFDuino_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFC8771AA46C2000E3516D /* RFDuino_iOSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DEFC8721AA46C2000E3516D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DEFC8541AA46C2000E3516D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DEFC85B1AA46C2000E3516D;
+			remoteInfo = RFDuino_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5DEFC85C1AA46C2000E3516D /* RFDuino_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFDuino_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DEFC8601AA46C2000E3516D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DEFC8611AA46C2000E3516D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DEFC8631AA46C2000E3516D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DEFC8661AA46C2000E3516D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DEFC8681AA46C2000E3516D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5DEFC86B1AA46C2000E3516D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5DEFC8711AA46C2000E3516D /* RFDuino_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFDuino_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DEFC8761AA46C2000E3516D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DEFC8771AA46C2000E3516D /* RFDuino_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFDuino_iOSTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DEFC8591AA46C2000E3516D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DEFC86E1AA46C2000E3516D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5DEFC8531AA46C2000E3516D = {
+			isa = PBXGroup;
+			children = (
+				5DEFC85E1AA46C2000E3516D /* RFDuino_iOS */,
+				5DEFC8741AA46C2000E3516D /* RFDuino_iOSTests */,
+				5DEFC85D1AA46C2000E3516D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DEFC85D1AA46C2000E3516D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DEFC85C1AA46C2000E3516D /* RFDuino_iOS.app */,
+				5DEFC8711AA46C2000E3516D /* RFDuino_iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DEFC85E1AA46C2000E3516D /* RFDuino_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5DEFC8611AA46C2000E3516D /* AppDelegate.swift */,
+				5DEFC8631AA46C2000E3516D /* ViewController.swift */,
+				5DEFC8651AA46C2000E3516D /* Main.storyboard */,
+				5DEFC8681AA46C2000E3516D /* Images.xcassets */,
+				5DEFC86A1AA46C2000E3516D /* LaunchScreen.xib */,
+				5DEFC85F1AA46C2000E3516D /* Supporting Files */,
+			);
+			path = RFDuino_iOS;
+			sourceTree = "<group>";
+		};
+		5DEFC85F1AA46C2000E3516D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DEFC8601AA46C2000E3516D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DEFC8741AA46C2000E3516D /* RFDuino_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DEFC8771AA46C2000E3516D /* RFDuino_iOSTests.swift */,
+				5DEFC8751AA46C2000E3516D /* Supporting Files */,
+			);
+			path = RFDuino_iOSTests;
+			sourceTree = "<group>";
+		};
+		5DEFC8751AA46C2000E3516D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DEFC8761AA46C2000E3516D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DEFC85B1AA46C2000E3516D /* RFDuino_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DEFC87B1AA46C2000E3516D /* Build configuration list for PBXNativeTarget "RFDuino_iOS" */;
+			buildPhases = (
+				5DEFC8581AA46C2000E3516D /* Sources */,
+				5DEFC8591AA46C2000E3516D /* Frameworks */,
+				5DEFC85A1AA46C2000E3516D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RFDuino_iOS;
+			productName = RFDuino_iOS;
+			productReference = 5DEFC85C1AA46C2000E3516D /* RFDuino_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DEFC8701AA46C2000E3516D /* RFDuino_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DEFC87E1AA46C2000E3516D /* Build configuration list for PBXNativeTarget "RFDuino_iOSTests" */;
+			buildPhases = (
+				5DEFC86D1AA46C2000E3516D /* Sources */,
+				5DEFC86E1AA46C2000E3516D /* Frameworks */,
+				5DEFC86F1AA46C2000E3516D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DEFC8731AA46C2000E3516D /* PBXTargetDependency */,
+			);
+			name = RFDuino_iOSTests;
+			productName = RFDuino_iOSTests;
+			productReference = 5DEFC8711AA46C2000E3516D /* RFDuino_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DEFC8541AA46C2000E3516D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ryan A. Rodriguez";
+				TargetAttributes = {
+					5DEFC85B1AA46C2000E3516D = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					5DEFC8701AA46C2000E3516D = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5DEFC85B1AA46C2000E3516D;
+					};
+				};
+			};
+			buildConfigurationList = 5DEFC8571AA46C2000E3516D /* Build configuration list for PBXProject "RFDuino_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DEFC8531AA46C2000E3516D;
+			productRefGroup = 5DEFC85D1AA46C2000E3516D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DEFC85B1AA46C2000E3516D /* RFDuino_iOS */,
+				5DEFC8701AA46C2000E3516D /* RFDuino_iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DEFC85A1AA46C2000E3516D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEFC8671AA46C2000E3516D /* Main.storyboard in Resources */,
+				5DEFC86C1AA46C2000E3516D /* LaunchScreen.xib in Resources */,
+				5DEFC8691AA46C2000E3516D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DEFC86F1AA46C2000E3516D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DEFC8581AA46C2000E3516D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEFC8641AA46C2000E3516D /* ViewController.swift in Sources */,
+				5DEFC8621AA46C2000E3516D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DEFC86D1AA46C2000E3516D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEFC8781AA46C2000E3516D /* RFDuino_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DEFC8731AA46C2000E3516D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DEFC85B1AA46C2000E3516D /* RFDuino_iOS */;
+			targetProxy = 5DEFC8721AA46C2000E3516D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DEFC8651AA46C2000E3516D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DEFC8661AA46C2000E3516D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5DEFC86A1AA46C2000E3516D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DEFC86B1AA46C2000E3516D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DEFC8791AA46C2000E3516D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DEFC87A1AA46C2000E3516D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DEFC87C1AA46C2000E3516D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RFDuino_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5DEFC87D1AA46C2000E3516D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RFDuino_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5DEFC87F1AA46C2000E3516D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RFDuino_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFDuino_iOS.app/RFDuino_iOS";
+			};
+			name = Debug;
+		};
+		5DEFC8801AA46C2000E3516D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RFDuino_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFDuino_iOS.app/RFDuino_iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DEFC8571AA46C2000E3516D /* Build configuration list for PBXProject "RFDuino_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DEFC8791AA46C2000E3516D /* Debug */,
+				5DEFC87A1AA46C2000E3516D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DEFC87B1AA46C2000E3516D /* Build configuration list for PBXNativeTarget "RFDuino_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DEFC87C1AA46C2000E3516D /* Debug */,
+				5DEFC87D1AA46C2000E3516D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5DEFC87E1AA46C2000E3516D /* Build configuration list for PBXNativeTarget "RFDuino_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DEFC87F1AA46C2000E3516D /* Debug */,
+				5DEFC8801AA46C2000E3516D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DEFC8541AA46C2000E3516D /* Project object */;
+}
