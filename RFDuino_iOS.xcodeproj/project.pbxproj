@@ -17,6 +17,7 @@
 		5DEFC8AA1AA475BB00E3516D /* NSData+SLIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFC8A71AA475BB00E3516D /* NSData+SLIP.m */; };
 		5DEFC8AB1AA475BB00E3516D /* SLIPBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFC8A81AA475BB00E3516D /* SLIPBuffer.swift */; };
 		5DEFC8AE1AA4761600E3516D /* RFduinoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFC8AD1AA4761600E3516D /* RFduinoManager.swift */; };
+		5DF523A61AA7BF06007B00C2 /* dataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF523A51AA7BF06007B00C2 /* dataTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5DEFC8A71AA475BB00E3516D /* NSData+SLIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SLIP.m"; sourceTree = "<group>"; };
 		5DEFC8A81AA475BB00E3516D /* SLIPBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLIPBuffer.swift; sourceTree = "<group>"; };
 		5DEFC8AD1AA4761600E3516D /* RFduinoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFduinoManager.swift; sourceTree = "<group>"; };
+		5DF523A51AA7BF06007B00C2 /* dataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dataTypes.swift; path = ../dataTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				5DEFC8AC1AA4761600E3516D /* Managers */,
 				5DEFC8631AA46C2000E3516D /* ViewController.swift */,
 				5DEFC8611AA46C2000E3516D /* AppDelegate.swift */,
+				5DF523A51AA7BF06007B00C2 /* dataTypes.swift */,
 				5DEFC8681AA46C2000E3516D /* Images.xcassets */,
 				5DEFC86A1AA46C2000E3516D /* LaunchScreen.xib */,
 				5DEFC8971AA46F9600E3516D /* Main.storyboard */,
@@ -257,6 +260,7 @@
 				5DEFC8641AA46C2000E3516D /* ViewController.swift in Sources */,
 				5DEFC8621AA46C2000E3516D /* AppDelegate.swift in Sources */,
 				5DEFC8AB1AA475BB00E3516D /* SLIPBuffer.swift in Sources */,
+				5DF523A61AA7BF06007B00C2 /* dataTypes.swift in Sources */,
 				5DEFC8A91AA475BB00E3516D /* NSData+CRC8.m in Sources */,
 				5DEFC8AE1AA4761600E3516D /* RFduinoManager.swift in Sources */,
 			);
@@ -462,6 +466,7 @@
 				5DEFC87D1AA46C2000E3516D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DEFC87E1AA46C2000E3516D /* Build configuration list for PBXNativeTarget "RFDuino_iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +475,7 @@
 				5DEFC8801AA46C2000E3516D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

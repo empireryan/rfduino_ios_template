@@ -22,28 +22,27 @@ class ViewController: UIViewController, RFduinoManagerDelegate {
         
         switch (rfdManager.peripheralState) {
             
-        case .Unassigned:
-            
-            let serviceUUIDs:[CBUUID]? = [CBUUID(string: "2220")]
-            rfdManager.scanForRFduinos(serviceUUIDs)
-            
-        case .Scanning:
-            break
-            
-        case .Disconnected:
-            rfdManager.connect()
-            
-        case .Connecting:
-            break
-            
-        case .Connected:
-            rfdManager.disconnect()
-            
-        case .Notifying:
-            rfdManager.disconnect()
-            
-        default:
-            break
+            case .Unassigned:
+                let serviceUUIDs:[CBUUID]? = [CBUUID(string: "2220")]
+                rfdManager.scanForRFduinos(serviceUUIDs)
+                
+            case .Scanning:
+                break
+                
+            case .Disconnected:
+                rfdManager.connect()
+                
+            case .Connecting:
+                break
+                
+            case .Connected:
+                rfdManager.disconnect()
+                
+            case .Notifying:
+                rfdManager.disconnect()
+                
+            default:
+                break
         }
     }
     
@@ -103,15 +102,28 @@ class ViewController: UIViewController, RFduinoManagerDelegate {
     }
     
     func rfduinoManagerReceivedMessage(messageIdentifier: UInt16, txFlags: UInt8, payloadData: NSData) {
+        var index: Int
         
         //		println("Received SLIP payload with ID = \(messageIdentifier)")
         
-        var measurementPayload = MeasurementType(A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, Z: 0, J: 0, K: 0, L: 0)
+        //var measurementPayload  = MeasurementType(A: 0, B: 0, C: 0, D: 0, E: 0, F: 0, G: 0, H: 0, Z: 0, J: 0, K: 0, L: 0)
+        var measurementPayload = MeasurementType()
         payloadData.getBytes(&measurementPayload, length:payloadData.length)
         
-        //		println("Measurement = \(measurementPayload.A)")
-        
+        measurementPayload.load()
+        for measurement in measurementPayload.AllValues{
+            println("Measurement:\(measurement)")
+        }
         valueLabel.text = "\(measurementPayload.A)"
+        
+        /**
+        println("Measurement = \(payloadData)")
+        println("PayloadData \(payloadData.length)")
+        
+        for index = 0; index < payloadData.length; index += 8{
+            valueLabel.text = "\(measurementPayload.(A + index))"
+        }
+        **/
     }
 }
 

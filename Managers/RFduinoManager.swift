@@ -272,6 +272,7 @@ class RFduinoManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, 
     func slipBufferReceivedPayload(payloadData: NSData, payloadIdentifier: UInt16, txFlags: UInt8) {
         
         // Inform delegate
+        
         if let theDelegate = delegate {
             
             theDelegate.rfduinoManagerReceivedMessage(payloadIdentifier, txFlags: txFlags, payloadData: payloadData)

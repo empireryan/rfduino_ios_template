@@ -13,4 +13,6 @@ typedef struct __attribute__((packed)) {
     float K;
     float L;
     
+    
+    
 } MeasurementType;
