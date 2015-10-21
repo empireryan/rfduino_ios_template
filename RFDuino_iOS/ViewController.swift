@@ -112,7 +112,7 @@ class ViewController: UIViewController, RFduinoManagerDelegate {
         
         measurementPayload.load()
         for measurement in measurementPayload.AllValues{
-            println("Measurement:\(measurement)")
+            print("Measurement:\(measurement)")
         }
         valueLabel.text = "\(measurementPayload.A)"
         

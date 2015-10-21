@@ -17,7 +17,7 @@
 		5DEFC8AA1AA475BB00E3516D /* NSData+SLIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFC8A71AA475BB00E3516D /* NSData+SLIP.m */; };
 		5DEFC8AB1AA475BB00E3516D /* SLIPBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFC8A81AA475BB00E3516D /* SLIPBuffer.swift */; };
 		5DEFC8AE1AA4761600E3516D /* RFduinoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DEFC8AD1AA4761600E3516D /* RFduinoManager.swift */; };
-		5DF523A61AA7BF06007B00C2 /* dataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF523A51AA7BF06007B00C2 /* dataTypes.swift */; };
+		A404E41E1BD369F7000ACAE0 /* dataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A404E41D1BD369F7000ACAE0 /* dataTypes.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		5DEFC8761AA46C2000E3516D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DEFC8771AA46C2000E3516D /* RFDuino_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFDuino_iOSTests.swift; sourceTree = "<group>"; };
 		5DEFC8981AA46F9600E3516D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../RFduinoUBP/iOS/UBP-Demo/UBP-Demo/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
-		5DEFC89A1AA4711000E3516D /* RFDuino_iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFDuino_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		5DEFC8A21AA475BB00E3516D /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		5DEFC8A31AA475BB00E3516D /* data_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = data_types.h; sourceTree = "<group>"; };
 		5DEFC8A41AA475BB00E3516D /* NSData+CRC8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CRC8.h"; sourceTree = "<group>"; };
@@ -50,7 +49,8 @@
 		5DEFC8A71AA475BB00E3516D /* NSData+SLIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SLIP.m"; sourceTree = "<group>"; };
 		5DEFC8A81AA475BB00E3516D /* SLIPBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SLIPBuffer.swift; sourceTree = "<group>"; };
 		5DEFC8AD1AA4761600E3516D /* RFduinoManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFduinoManager.swift; sourceTree = "<group>"; };
-		5DF523A51AA7BF06007B00C2 /* dataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = dataTypes.swift; path = ../dataTypes.swift; sourceTree = "<group>"; };
+		A404E41D1BD369F7000ACAE0 /* dataTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataTypes.swift; sourceTree = "<group>"; };
+		A404E41F1BD6F0D9000ACAE0 /* RFDuino_iOS-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RFDuino_iOS-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +96,11 @@
 				5DEFC8AC1AA4761600E3516D /* Managers */,
 				5DEFC8631AA46C2000E3516D /* ViewController.swift */,
 				5DEFC8611AA46C2000E3516D /* AppDelegate.swift */,
-				5DF523A51AA7BF06007B00C2 /* dataTypes.swift */,
+				A404E41D1BD369F7000ACAE0 /* dataTypes.swift */,
 				5DEFC8681AA46C2000E3516D /* Images.xcassets */,
 				5DEFC86A1AA46C2000E3516D /* LaunchScreen.xib */,
 				5DEFC8971AA46F9600E3516D /* Main.storyboard */,
-				5DEFC89A1AA4711000E3516D /* RFDuino_iOS-Bridging-Header.h */,
+				A404E41F1BD6F0D9000ACAE0 /* RFDuino_iOS-Bridging-Header.h */,
 				5DEFC85F1AA46C2000E3516D /* Supporting Files */,
 			);
 			path = RFDuino_iOS;
@@ -199,7 +199,8 @@
 		5DEFC8541AA46C2000E3516D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ryan A. Rodriguez";
 				TargetAttributes = {
 					5DEFC85B1AA46C2000E3516D = {
@@ -257,10 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DEFC8AA1AA475BB00E3516D /* NSData+SLIP.m in Sources */,
+				A404E41E1BD369F7000ACAE0 /* dataTypes.swift in Sources */,
 				5DEFC8641AA46C2000E3516D /* ViewController.swift in Sources */,
 				5DEFC8621AA46C2000E3516D /* AppDelegate.swift in Sources */,
 				5DEFC8AB1AA475BB00E3516D /* SLIPBuffer.swift in Sources */,
-				5DF523A61AA7BF06007B00C2 /* dataTypes.swift in Sources */,
 				5DEFC8A91AA475BB00E3516D /* NSData+CRC8.m in Sources */,
 				5DEFC8AE1AA4761600E3516D /* RFduinoManager.swift in Sources */,
 			);
@@ -325,6 +326,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -390,12 +392,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RFDuino_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RYS.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ryanarodriguez/Developer/xCode/RFDuino_iOS/RFDuino_iOS/RFDuino_iOS-Bridging-Header.h";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/empire/Documents/GitHub/RFDuinoSwift/RFDuino_iOS/RFDuino_iOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -405,11 +411,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = RFDuino_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RYS.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ryanarodriguez/Developer/xCode/RFDuino_iOS/RFDuino_iOS/RFDuino_iOS-Bridging-Header.h";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/empire/Documents/GitHub/RFDuinoSwift/RFDuino_iOS/RFDuino_iOS-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -427,6 +437,7 @@
 				);
 				INFOPLIST_FILE = RFDuino_iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RYS.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFDuino_iOS.app/RFDuino_iOS";
 			};
@@ -442,6 +453,7 @@
 				);
 				INFOPLIST_FILE = RFDuino_iOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "RYS.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RFDuino_iOS.app/RFDuino_iOS";
 			};

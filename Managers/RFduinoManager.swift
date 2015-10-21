@@ -68,7 +68,7 @@ class RFduinoManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, 
             
             scanResults = Array();
             
-            println("Beginning scan for RFduino peripherals")
+            print("Beginning scan for RFduino peripherals")
             centralManager.stopScan()
             centralManager.scanForPeripheralsWithServices(serviceUUIDs, options: nil)
             scanTimer = NSTimer.scheduledTimerWithTimeInterval(BLEScanDuration, target: self, selector: "scanTimerDidFire", userInfo: nil, repeats: false)
@@ -105,7 +105,7 @@ class RFduinoManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, 
         
         if _selectedPeripheral?.state == CBPeripheralState.Connected || _selectedPeripheral?.state == CBPeripheralState.Connecting {
             
-            centralManager.cancelPeripheralConnection(_selectedPeripheral)
+            centralManager.cancelPeripheralConnection(_selectedPeripheral!)
         }
     }
     
@@ -125,13 +125,13 @@ class RFduinoManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, 
             if (newPeripheral == nil) {
                 
                 // Disconnect from current peripheral
-                centralManager.cancelPeripheralConnection(_selectedPeripheral)
+                centralManager.cancelPeripheralConnection(_selectedPeripheral!)
             }
         }
         
         didSet {
             
-            if let aPeripheral = _selectedPeripheral {
+            if let _ = _selectedPeripheral {
                 
                 peripheralState = .Disconnected
                 
@@ -150,7 +150,7 @@ class RFduinoManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, 
         centralManager.stopScan();
         peripheralState = .Unassigned
         
-        var peripherals = scanResults?.map({ (aResult: ScanResult) -> CBPeripheral in
+        let peripherals = scanResults?.map({ (aResult: ScanResult) -> CBPeripheral in
             
             return aResult.peripheral
         })
@@ -169,13 +169,13 @@ class RFduinoManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, 
     
     
     // MARK: - CBCentralManagerDelegate methods
-    func centralManagerDidUpdateState(central: CBCentralManager!) {
+    func centralManagerDidUpdateState(central: CBCentralManager) {
         
         switch (central.state) {
             
         case .PoweredOn:
             
-            println("CoreBluetooth powered on");
+            print("CoreBluetooth powered on");
             
             if let aBlock = onReadyBlock {
                 
@@ -190,39 +190,39 @@ class RFduinoManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, 
     }
     
     
-    func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!, advertisementData: [NSObject : AnyObject]!, RSSI: NSNumber!) {
+    func centralManager(central: CBCentralManager, didDiscoverPeripheral peripheral: CBPeripheral, advertisementData: [String : AnyObject], RSSI: NSNumber){
         
         scanResults?.append( (peripheral, advertisementData, RSSI) )
     }
     
-    func centralManager(central: CBCentralManager!, didConnectPeripheral peripheral: CBPeripheral!) {
+    func centralManager(central: CBCentralManager, didConnectPeripheral peripheral: CBPeripheral) {
         
-        println("Connected to RFduino");
+        print("Connected to RFduino");
         
         peripheralState = .Connected
         
         peripheral.discoverServices(nil)
     }
     
-    func centralManager(central: CBCentralManager!, didFailToConnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
+    func centralManager(central: CBCentralManager, didFailToConnectPeripheral peripheral: CBPeripheral, error: NSError?) {
         
-        println("Failed to connect to RFduino")
+        print("Failed to connect to RFduino")
         peripheralState = .Disconnected
     }
     
-    func centralManager(central: CBCentralManager!, didDisconnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
+    func centralManager(central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: NSError?) {
         
-        println("Disconnected from RFduino")
+        print("Disconnected from RFduino")
         peripheralState = .Disconnected
     }
     
     
     // MARK: - CBPeripheralDelegate methods
-    func peripheral(peripheral: CBPeripheral!, didDiscoverServices error: NSError!) {
+    func peripheral(peripheral: CBPeripheral, didDiscoverServices error: NSError?) {
         
-        println("Discovered services on RFduino");
+        print("Discovered services on RFduino");
         
-        for anObject in peripheral.services {
+        for anObject in peripheral.services! {
             
             if let aService = anObject as? CBService {
                 
@@ -231,15 +231,15 @@ class RFduinoManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, 
         }
     }
     
-    func peripheral(peripheral: CBPeripheral!, didDiscoverCharacteristicsForService service: CBService!, error: NSError!) {
+    func peripheral(peripheral: CBPeripheral, didDiscoverCharacteristicsForService service: CBService, error: NSError?) {
         
-        println("Discovered characteristics on RFduino");
+        print("Discovered characteristics on RFduino");
         
-        for anObject in service.characteristics {
+        for anObject in service.characteristics!{
             
             if let aCharacteristic = anObject as? CBCharacteristic {
                 
-                if (aCharacteristic.properties & CBCharacteristicProperties.Notify) == CBCharacteristicProperties.Notify {
+                if aCharacteristic.properties  == CBCharacteristicProperties.Notify {
                     
                     // Register to be notified whenever the RFduino transmits
                     peripheral.setNotifyValue(true, forCharacteristic: aCharacteristic)
@@ -248,22 +248,22 @@ class RFduinoManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, 
         }
     }
     
-    func peripheral(peripheral: CBPeripheral!, didUpdateNotificationStateForCharacteristic characteristic: CBCharacteristic!, error: NSError!) {
+    func peripheral(peripheral: CBPeripheral, didUpdateNotificationStateForCharacteristic characteristic: CBCharacteristic, error: NSError?) {
         
-        println("Enabled notification of RFduino transmission")
+        print("Enabled notification of RFduino transmission")
         peripheralState = .Notifying
     }
     
-    func peripheral(peripheral: CBPeripheral!, didUpdateValueForCharacteristic characteristic: CBCharacteristic!, error: NSError!) {
+    func peripheral(peripheral: CBPeripheral, didUpdateValueForCharacteristic characteristic: CBCharacteristic, error: NSError?) {
         
-        if let anError = error {
+        if let _ = error {
             
-            println("Characteristic update error = \(error)")
+            print("Characteristic update error = \(error)")
             
         } else {
             
-            println("RFduino transmitted")
-            slipBuffer.appendEscapedBytes(characteristic.value)
+            print("RFduino transmitted")
+            slipBuffer.appendEscapedBytes(characteristic.value!)
         }
     }
     
