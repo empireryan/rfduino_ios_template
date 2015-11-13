@@ -1,4 +1,7 @@
-# Project Name
+# IOS Template for RFDuino Apps
+
+How to change the name of an Xcode project:
+http://stackoverflow.com/questions/17744319/duplicate-and-rename-xcode-project-associated-folders
 
 TODO: Write a project description
 
